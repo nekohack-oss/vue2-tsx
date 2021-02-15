@@ -9,7 +9,6 @@ export default Vue.extend({
         return (
             <div id="app">
                 <img alt="Vue logo" src={Img} />
-                {/* @ts-ignore */}
                 <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
             </div>
         )

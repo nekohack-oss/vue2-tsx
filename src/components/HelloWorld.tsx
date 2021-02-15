@@ -4,6 +4,13 @@ type HelloWorldProps = {
   msg?: string
 }
 
+// https://jp.vuejs.org/v2/guide/typescript.html
+declare module 'vue/types/options' {
+  interface ComponentOptions<V extends Vue> {
+    msg?: string
+  }
+}
+
 export default Vue.extend({
     props: {
         msg: {
